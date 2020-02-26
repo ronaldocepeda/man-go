@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+nav
+{
+  width: 100%;
+  background: #000000;
+  padding: 0 50px;
+  box-sizing: border-box;
+  box-shadow: -6px -6px 20px rgba(255,255,255,1),
+                 6px 6px 20px rgba(0,0,0,.3) !important;
+}
+/* class estilo url 
+
+nav ul li.active a
+{
+    color: #fff44f;
+    text-transform: uppercase;
+} */
+
+nav h1
+
+{
+    margin: 13px 10px 0 -35px;
+    padding: 10px 0px;
+    float: left;
+}
+nav h1 a{
+    text-decoration: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 0rem !important;
+}
+nav ul li
+{
+list-style: none;
+display: inline-block;
+text-align: center;
+justify-content: center;
+padding: 50px 5px;
+transition: .5;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none !important;
+}
+nav ul li a:hover
+{
+    color: #fff44f;
+}
+/* .brand-logo{
+    float: right;
+padding: 15px 0;
+} */
+
+/* pre formato nombre */
+
+nav h1 a span{
+    font-size: 60px !important;
+    display: inline-block !important;
+    font-family: "Roboto", sans-serif !important;
+    letter-spacing: -7px !important;
+    font-weight: 700 !important;
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* Nombre que me gusta */
+span:nth-child(1)
+{
+color: rgb(91, 207, 13);
+transform: scale(1.2);
+}
+span:nth-child(2)
+{
+color:   rgb(202, 118, 15);
+transform: scale(0.8);
+letter-spacing: -15px;
+}
+span:nth-child(3)
+{
+   color:  rgb(252, 200, 15);
+   transform: scale(0.8);
+   letter-spacing: -10px;
+   
+}
+span:nth-child(4)
+{
+    color: rgb(91, 207, 13);
+    transform: scale(1.1);
+}
+span:nth-child(5)
+{
+    color: rgb(181, 106, 12);
+    transform: scale(1.1);
+}
+span:nth-child(6)
+{
+color: rgb(206, 64, 12);
+transform: scale(1.2);}
+
+.responsive-bar
+{
+    width: 100%;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    background:  #000000;
+    display: none; 
+
+}
+.responsive-bar h1 
+{
+    font-size: 60px;
+    text-decoration: none;
+    float: left;
+    padding: 0;
+    margin: 10px 0px 0px 0px;
+    letter-spacing: -4px !important;
+}
+.menu-responsive1
+{
+    float: right;
+    transform: scale(0.7);
+    width: 3%;
+    padding: 25px 10px;
+    margin: 10px 5px 0px 0px;
+    cursor: pointer;
+}
+.toggler1{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+.hamburger1{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.hamburger1>div{
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: #fff44f;
+    transition: .4s;
+
+}
+
+.hamburger1>div:before, .hamburger1>div:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: #fff44f;
+    
+}
+.hamburger1>div:before{
+    top: -10px ;
+}
+.hamburger1>div:after{
+    top: 10px;
+}
+.toggler1:checked + .hamburger1>div{
+    transform: rotate(135deg);
+}
+.toggler1:checked:hover + .hamburger1>div{
+    transform: rotate(225deg);
+}
+
+
+.toggler1:checked + .hamburger1>div:after, .toggler1:checked + .hamburger1>div:before{
+    transform: rotate(90deg);
+    top: 0;
+}
+
+@media (max-width: 900px)
+{
+    nav
+     {
+     display: none;
+     padding: 0;
+     }
+     .responsive-bar
+     {
+    display: block;
+     }
+     nav h1
+     {
+      display: block;
+      float: none;
+     }
+     nav ul 
+     {
+         float: none;
+     }
+     nav ul li 
+     {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    
+     }
+     h1.brand 
+     {
+         display: none;
+     }
+     .form-row
+     {
+         display: block;
+     }
+}

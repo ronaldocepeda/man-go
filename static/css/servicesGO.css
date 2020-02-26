@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif
+}
+section
+{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    border: 1px solid #000;
+}
+section .slide 
+{
+    position: relative;
+    background: #0f0;
+    height: 100%;
+    flex: 1;
+    border-right: 1px solid #000;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+section .slide:last-child
+{
+    border-right: none;
+}
+section .slide:hover
+{
+    flex-grow: 5;
+}
+section .slide:nth-child(1)
+{
+ background: url("/static/img/1mg.jpg") no-repeat;
+ background-position: center;
+ background-size: cover;
+ 
+}
+section .slide:nth-child(2)
+{
+background: url("/static/img/3mg.jpg") no-repeat;
+background-position: center;
+background-size: cover;
+}
+section .slide:nth-child(3)
+{
+    background: url("/static/img/2mg.jpg")no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+section .slide:nth-child(4)
+{
+    background: url("/static/img/6mg.jpg")no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+section .slide:nth-child(5)
+{
+    background: url("/static/img/5mg.jpg")no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+section .slide .content
+{
+    position: absolute;
+    bottom: 0;
+    margin: 40px;
+    padding: 30px;
+    background: #000;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0s;
+    transform: translateY(100px);
+}
+section .slide:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+
+
+ .btn1
+{
+    background: rgb(91, 207, 13);
+    color: #000;
+}
+ .btn2
+{
+    background: rgb(202, 118, 15);
+    color: #000;
+}
+ .btn3
+{
+    background: rgb(252, 200, 15);
+    color: #000;
+}
+ .btn4
+{
+    background: rgb(181, 106, 12);
+    color: #000;
+    
+}
+.btn5
+{
+    background: rgb(206, 64, 12);
+    color: #000;
+}

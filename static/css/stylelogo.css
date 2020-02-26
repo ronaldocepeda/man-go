@@ -1,0 +1,111 @@
+section
+{
+    background-image: linear-gradient(to right, #000000, #14f314);
+    width: 100%;
+    display:absolute;
+
+
+}
+
+.register-right
+{
+    position: relative;
+    border: none;
+    background: #f8f8f8;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+    border-bottom-right-radius:10% 50%;
+    border-top-right-radius: 10% 50%;
+    margin: 10%;
+    width: 60%;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.register-right h2
+{
+    text-align: center;
+    margin-bottom: -10px;
+
+}
+.register-form
+{
+    padding: 30px;
+}
+.register-right .btn-primary
+{
+    display: block;
+    text-align: center;
+    border-radius: 1.5rem;
+    border: none;
+    width: 55%;
+    background: #14f314;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 0px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.register-right .btn-primary:hover
+{
+    background: #000000;
+}
+.message
+ {
+    text-decoration: none;
+    margin: 0 !important;
+    padding: 10px 0px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: center;
+    text-align: center ;
+    
+}
+.message a
+{
+    text-decoration: none !important;
+}
+h2 span{
+    font-size: 60px;
+    display: inline-block;
+    font-family: "Roboto", sans-serif ;
+    letter-spacing: -7px ;
+    font-weight: 700;
+    padding: 10px 0;
+    margin: 0;
+}
+span:nth-child(1)
+{
+color: rgb(91, 207, 13);
+transform: scale(1.2);
+}
+span:nth-child(2)
+{
+color:   rgb(202, 118, 15);
+transform: scale(0.8);
+letter-spacing: -15px;
+}
+span:nth-child(3)
+{
+   color:  rgb(252, 200, 15);
+   transform: scale(0.8);
+   letter-spacing: -10px;
+   
+}
+span:nth-child(4)
+{
+    color: rgb(91, 207, 13);
+    transform: scale(1.1);
+}
+span:nth-child(5)
+{
+    color: rgb(181, 106, 12);
+    transform: scale(1.1);
+}
+span:nth-child(6)
+{
+color: rgb(206, 64, 12);
+transform: scale(1.2);}

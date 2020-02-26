@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: url("/static/img/mangohojas.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.container:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.brand-logo
+{
+    display: block;
+    margin-top: 10px;
+    color: rgba(0, 0, 0,1.8);
+    position: relative;
+    bottom: 15px;
+}
+.brand-logo:hover{
+    transform: scale(1.2);
+transition: 0.75s;
+
+} 
+.animation{
+    animation-name: corazon;
+    animation-duration: .7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes corazon{
+
+    from{
+
+        transform: scale(1)
+    }
+    to{
+        transform: scale(1.1)
+    }
+}
+.content{
+    max-width: 700px;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+.content h1{
+    font-size: 4.3rem;
+    margin-bottom: 0.8rem;
+    color: #fff44f;
+    font-family: "Dancing Script", cursive;
+    display: inline;
+}
+.content p
+{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+.btn{
+    padding: 0.75rem 1.25rem;
+    margin-top: .8rem;
+    font-size: 1.1rem;
+    font-weight: 550;
+    color: #fff44f;
+    background-color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: .3s;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+/* Nombre */
+
+span{
+    display: table-cell;
+    font-family: "Roboto", sans-serif;
+    /* font-family: 'Anton', sans-serif;
+     */
+
+}
+
+span:nth-child(1)
+{
+    color: rgb(91, 207, 13);
+    transform: scale(1.1);
+    letter-spacing: -5px;
+}
+span:nth-child(2)
+{
+    color: rgb(202, 118, 15);
+    transform: scale(0.8);
+    letter-spacing: -10px;
+}
+span:nth-child(3)
+{
+    color: rgb(252, 200, 15);
+    transform: scale(0.8);
+    letter-spacing: 5px;
+}
+span:nth-child(4)
+{
+    color: rgb(91, 207, 13);
+    transform: scale(1.1);
+}
+span:nth-child(5)
+{
+    color: rgb(181, 106, 12);
+    transform: scale(1.1);
+}
+span:nth-child(6)
+{
+color: rgb(206, 64, 12);
+transform: scale(1.1);
+}

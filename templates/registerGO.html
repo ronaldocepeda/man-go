@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+{% from "_macro.html" import render_field %}
+
+<link rel="stylesheet" href="/static/css/loginGo.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<section>
+<div class="container" >
+<div class="row" >
+<div class="col-md-10 offset-md-1" >
+<div class="row" >
+<div class="col-md-5 register-left" >
+<img class="animation" src="/static/img/ManGO.png" width="100px" height="80px" alt=""></a>
+ <h3>Join Us</h3>
+ <p>Subscribe Easy Tutorials Youtube Chane to watch more videos</p>
+ <button type="button" class="btn btn-primary">About Us</button>
+
+</div>
+<form action="/register"  class="col-md-7 register-right" method="POST" >
+ <h2>Registrate Ahora!</h2>
+ <div  class="register-form" >
+ <div class="form-row" class="col-md-7">
+     <div class="form-group1" >
+        <input type="hidden" name="csrf_token" value="{{ csrf_token()}}">
+        {{ render_field(form.username, class='form-control', placeholder='Nombre') }}
+     </div>
+     <div class="form-group2" >
+        {{ render_field(form.apellido, class='form-control', placeholder='Apellido') }}
+    </div>
+ </div>
+     <div class="form-group">
+        {{ render_field(form.usuario,class='form-control', placeholder='Usuario') }}
+    </div>
+    <div class="form-group">
+        {{ render_field(form.email, class='form-control', placeholder='Correo Electronico') }}
+    </div>
+    <div class="form-group">
+        {{ render_field(form.password, class='form-control', placeholder='Contraseña') }}
+    </div>
+    <button type="submit" class="btn btn-primary">Registrate</button>
+ </div>
+ <div class="relative"><hr><a class="login-text">O</a></div>
+ <div>
+     <a  href="#" class="facebook"> <img src="/static/img/facebook.png" alt=""> Facebook</a>
+     <a  href="#" class="google"> <img src="/static/img/google-mas.png" alt=""> Google</a>
+    </div>
+
+     <div> <p class="message"  > ¿Ya registrado? <a href="/login">Inicia sesión</a></p></div>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+{% endblock %}

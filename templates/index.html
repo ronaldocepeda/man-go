@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>  {{ titulo }} </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    {% from "_macro.html" import render_field %}
+    
+    <form action="">
+        {{ form.csrf_toke }}
+      {{ render_field(form.username, class='form-control', placeholder='Nombre') }}
+      {{ render_field(form.usuario,class='form-control', placeholder='Usuario' ) }}
+      {{ render_field(form.apellido, class='form-control', placeholder='Apellido') }}
+      {{ render_field(form.email, class='form-control', placeholder='Correo Electronico') }}
+      {{ render_field(form.password, class='form-control', placeholder='Contraseña') }}
+
+      <button type="submit" class="btn btn-primary">Inicia sesión </button>
+
+    </form>
+</body>
+</html>
